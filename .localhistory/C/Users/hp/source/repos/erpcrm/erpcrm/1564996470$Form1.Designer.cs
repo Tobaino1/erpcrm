@@ -134,7 +134,6 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "Login as Sales Rep";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_2);
             // 
             // pictureBox2
             // 
@@ -176,7 +175,6 @@
             this.button2.Text = "    Cancel";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -204,7 +202,6 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "   Enter";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox2
             // 

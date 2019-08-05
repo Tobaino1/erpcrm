@@ -21,39 +21,20 @@ namespace erpcrm
             InitializeComponent();
         }
 
-      
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            Form2 myform = new Form2();
-            this.Hide();
-            myform.Show();
-        }
-
-        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
 
             if (textBox1.Text == string.Empty)
             {
@@ -90,18 +71,30 @@ namespace erpcrm
             }
             con.Close();
 
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
+            Form2 myform = new Form2();
+            this.Hide();
+            myform.Show();
         }
 
-        private void button4_Click_2(object sender, EventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void Button4_Click_1(object sender, EventArgs e)
         {
             new Form9().Show();
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

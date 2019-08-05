@@ -42,6 +42,12 @@ namespace erpcrm
 
         }
 
+        private void Button4_Click_1(object sender, EventArgs e)
+        {
+            new Form9().Show();
+            this.Hide();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -96,12 +102,6 @@ namespace erpcrm
         {
             textBox1.Text = "";
             textBox2.Text = "";
-        }
-
-        private void button4_Click_2(object sender, EventArgs e)
-        {
-            new Form9().Show();
-            this.Hide();
         }
     }
 }
