@@ -39,6 +39,7 @@
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -143,6 +144,7 @@
             this.panel2.Controls.Add(this.picClose);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.button8);
             this.panel2.Location = new System.Drawing.Point(66, 89);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(919, 55);
@@ -154,12 +156,11 @@
             this.picClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picClose.BackgroundImage")));
             this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picClose.Location = new System.Drawing.Point(877, 14);
+            this.picClose.Location = new System.Drawing.Point(974, 5);
             this.picClose.Name = "picClose";
             this.picClose.Size = new System.Drawing.Size(25, 21);
             this.picClose.TabIndex = 3;
             this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // pictureBox2
             // 
@@ -182,6 +183,17 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "   Product Information Management";
             // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(825, 15);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 34);
+            this.button8.TabIndex = 51;
+            this.button8.Text = "       Exit";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(541, 496);
@@ -190,7 +202,6 @@
             this.button7.TabIndex = 50;
             this.button7.Text = "Refresh";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -200,7 +211,6 @@
             this.button6.TabIndex = 49;
             this.button6.Text = "Erase";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -210,7 +220,6 @@
             this.button5.TabIndex = 48;
             this.button5.Text = "Update";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -240,7 +249,6 @@
             this.button4.TabIndex = 45;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
@@ -284,7 +292,6 @@
             this.button3.TabIndex = 43;
             this.button3.Text = "Insert";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox3
             // 
@@ -353,7 +360,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(438, 68);
+            this.label2.Location = new System.Drawing.Point(380, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 18);
             this.label2.TabIndex = 36;
@@ -367,7 +374,6 @@
             this.button2.TabIndex = 35;
             this.button2.Text = "Rever back to Menu form";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -377,7 +383,6 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "Rever back to ERP dashboard";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
@@ -394,7 +399,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(443, 23);
+            this.label1.Location = new System.Drawing.Point(400, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 20);
             this.label1.TabIndex = 57;
@@ -483,6 +488,7 @@
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

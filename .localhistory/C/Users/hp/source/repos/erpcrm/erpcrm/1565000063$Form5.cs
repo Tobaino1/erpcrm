@@ -135,30 +135,6 @@ namespace erpcrm
             textBox3.Clear();
             textBox4.Clear();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
-            this.Hide();
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Form3().Show();
-            this.Hide();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            new Form5().Show();
-            this.Hide();
-        }
-
-        private void picClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
     }
 

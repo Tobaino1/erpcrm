@@ -11,27 +11,34 @@ using System.Windows.Forms;
 
 namespace erpcrm
 {
-    public partial class Form5 : Form
+    public partial class Form4 : Form
     {
-        public Form5()
+        public Form4()
         {
+            InitializeComponent();
+
+
+
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
             con.Open();
-            MySqlDataAdapter sda = new MySqlDataAdapter("select * from inventory ", con);
+            MySqlDataAdapter sda = new MySqlDataAdapter("select * from customer ", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             foreach (DataRow item in dt.Rows)
             {
                 int n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = item["name"].ToString();
-                dataGridView1.Rows[n].Cells[1].Value = item["desc"].ToString();
-                dataGridView1.Rows[n].Cells[2].Value = item["price"].ToString();
-                dataGridView1.Rows[n].Cells[3].Value = item["prd_id"].ToString();
+                dataGridView1.Rows[n].Cells[0].Value = item["cus_name"].ToString();
+                dataGridView1.Rows[n].Cells[1].Value = item["phone_no"].ToString();
+                dataGridView1.Rows[n].Cells[2].Value = item["address"].ToString();
+                dataGridView1.Rows[n].Cells[3].Value = item["email"].ToString();
 
 
             }
+        }
 
-            InitializeComponent();
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -66,7 +73,7 @@ namespace erpcrm
 
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO inventory (`name`, `desc`, `price`, `prd_id`) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "', '" + textBox4.Text + "')", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO customer (`cus_name`, `phone_no`, `address`, `email`) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "', '" + textBox4.Text + "')", con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("record has been succesfully inserted in the database");
             con.Close();
@@ -74,17 +81,16 @@ namespace erpcrm
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text == string.Empty)
+            if (textBox2.Text == string.Empty)
             {
-                MessageBox.Show("Product Id field can't be empty, please enter a value!");
+                MessageBox.Show("Phone number field can't be empty, please enter the customer phone no & click delete button in the order to delete the record!");
                 return;
 
             }
 
-
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("DELETE FROM `inventory` WHERE prd_id = '" + textBox4.Text + "'", con);
+            MySqlCommand cmd = new MySqlCommand("DELETE FROM `customer` WHERE phone_no = '" + textBox2.Text + "'", con);
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("record has been successfully deleted");
@@ -122,13 +128,13 @@ namespace erpcrm
 
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
             con.Open();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `inventory` SET `name`= '" + textBox1.Text + "',`desc`= '" + textBox2.Text + "',`price`= '" + textBox3.Text + "',`prd_id`= '" + textBox4.Text + "' WHERE prd_id = '" + textBox4.Text + "'", con);
+            MySqlCommand cmd = new MySqlCommand("UPDATE `customer` SET `cus_name`= '" + textBox2.Text + "',`phone_no`= '" + textBox2.Text + "',`address`= '" + textBox3.Text + "',`email`= '" + textBox4.Text + "' WHERE phone_no = '" + textBox2.Text + "'", con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("record has been successfully updated");
             con.Close();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             textBox2.Clear();
@@ -136,28 +142,16 @@ namespace erpcrm
             textBox4.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             new Form2().Show();
             this.Hide();
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            new Form3().Show();
+            new Form4().Show();
             this.Hide();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            new Form5().Show();
-            this.Hide();
-        }
-
-        private void picClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
     }

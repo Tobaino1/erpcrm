@@ -60,10 +60,6 @@
             this.picClose = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,12 +70,11 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(214, 502);
+            this.button6.Location = new System.Drawing.Point(214, 426);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(154, 23);
             this.button6.TabIndex = 33;
@@ -92,7 +87,7 @@
             this.panel3.BackColor = System.Drawing.Color.Plum;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(449, 139);
+            this.panel3.Location = new System.Drawing.Point(449, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(605, 54);
             this.panel3.TabIndex = 29;
@@ -127,7 +122,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(449, 199);
+            this.dataGridView1.Location = new System.Drawing.Point(449, 123);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(605, 282);
             this.dataGridView1.TabIndex = 32;
@@ -163,7 +158,7 @@
             this.GroupBox2.Controls.Add(this.button5);
             this.GroupBox2.Controls.Add(this.button4);
             this.GroupBox2.Controls.Add(this.button3);
-            this.GroupBox2.Location = new System.Drawing.Point(17, 388);
+            this.GroupBox2.Location = new System.Drawing.Point(17, 312);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(419, 90);
             this.GroupBox2.TabIndex = 31;
@@ -249,7 +244,7 @@
             this.GroupBox1.Controls.Add(this.label5);
             this.GroupBox1.Controls.Add(this.Label6);
             this.GroupBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(17, 199);
+            this.GroupBox1.Location = new System.Drawing.Point(17, 123);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(419, 183);
             this.GroupBox1.TabIndex = 30;
@@ -326,7 +321,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(34, 502);
+            this.button1.Location = new System.Drawing.Point(34, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 23);
             this.button1.TabIndex = 26;
@@ -339,7 +334,7 @@
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Location = new System.Drawing.Point(17, 139);
+            this.panel1.Location = new System.Drawing.Point(17, 63);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(419, 54);
             this.panel1.TabIndex = 28;
@@ -371,7 +366,7 @@
             this.panel2.Controls.Add(this.picClose);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(17, 78);
+            this.panel2.Location = new System.Drawing.Point(17, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1037, 55);
             this.panel2.TabIndex = 27;
@@ -410,59 +405,11 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "   Customer Relationship Management";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(81, 9);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(89, 63);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 37;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(433, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 20);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "CREAMY FOODS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(774, 533);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 16);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Design by Tobaino (sparklgrid)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(263, 533);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(297, 16);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Copyright Creamy Foods, Allright Reserved 2019";
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1111, 558);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(1111, 507);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
@@ -487,9 +434,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -526,9 +471,5 @@
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
     }
 }

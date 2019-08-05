@@ -154,11 +154,6 @@ namespace erpcrm
             new Form5().Show();
             this.Hide();
         }
-
-        private void picClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
     }
 
