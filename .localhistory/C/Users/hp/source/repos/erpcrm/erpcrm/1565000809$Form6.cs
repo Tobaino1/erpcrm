@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
 namespace erpcrm
@@ -147,49 +146,6 @@ namespace erpcrm
             this.Hide();
             myform.Show();
             con.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox6.Clear();
-            textBox7.Clear();
-            textBox8.Clear();
-            textBox9.Clear();
-            textBox10.Clear();
-            textBox11.Clear();
-            textBox12.Clear();
-            textBox13.Clear();
-            textBox12.Clear();
-            textBox13.Clear();
-            textBox14.Clear();
-            textBox15.Clear();
-            textBox16.Clear();
-            textBox17.Clear();
-            textBox18.Clear();
-            textBox19.Clear();
-            textBox20.Clear();
-            textBox21.Clear();
-            textBox22.Clear();
-            textBox21.Clear();
-            textBox22.Clear();
-            textBox23.Clear();
-            textBox24.Clear();
-            textBox25.Clear();
-            textBox26.Clear();
-            textBox27.Clear();
-            textBox28.Clear();
-            textBox29.Clear();
-            textBox30.Clear();
-            textBox31.Clear();
-            textBox32.Clear();
-            textBox33.Clear();
-            textBox34.Clear();
-            textBox35.Clear();
         }
     }
 }
