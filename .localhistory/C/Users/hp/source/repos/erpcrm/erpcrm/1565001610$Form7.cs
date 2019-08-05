@@ -65,7 +65,7 @@ namespace erpcrm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            textBox1.Text = "";
         }
     }
 }

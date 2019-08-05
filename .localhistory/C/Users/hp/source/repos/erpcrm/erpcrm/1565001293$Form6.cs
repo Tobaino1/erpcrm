@@ -191,10 +191,5 @@ namespace erpcrm
             textBox34.Clear();
             textBox35.Clear();
         }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace erpcrm
 {
@@ -55,17 +54,6 @@ namespace erpcrm
             }
             MessageBox.Show("Your request was succesfully processed, click on ok to see the report");
             con.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
         }
     }
 }
