@@ -60,7 +60,7 @@ namespace erpcrm
         {
             CaptureScreen();
             printDocument1.Print();
-            printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(printDocument1_PrintPage);
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
         }
 
 
@@ -86,17 +86,19 @@ namespace erpcrm
             e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+    }
+
+    private void button1_Click(object sender, EventArgs e)
         {
             new Form6().Show();
             this.Hide();
         }
-    }
-
-   
 
         //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         //{
 
         //}
     }
+}

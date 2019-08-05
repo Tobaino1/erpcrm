@@ -58,32 +58,7 @@ namespace erpcrm
 
         private void printButton_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
-            printDocument1.Print();
-            printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(printDocument1_PrintPage);
-        }
 
-
-        Bitmap memoryImage;
-
-        private void CaptureScreen()
-        {
-            Graphics myGraphics = this.CreateGraphics();
-            Size s = this.Size;
-            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
-        }
-
-
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-
-        }
-
-        private void printDocument1_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -91,12 +66,10 @@ namespace erpcrm
             new Form6().Show();
             this.Hide();
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+        }
     }
-
-   
-
-        //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        //{
-
-        //}
-    }
+}

@@ -50,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -63,16 +62,15 @@
             this.printButton.TabIndex = 48;
             this.printButton.Text = "Print receipt";
             this.printButton.UseVisualStyleBackColor = true;
-            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 111);
+            this.button1.Location = new System.Drawing.Point(658, 111);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Revert to sales form";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Size = new System.Drawing.Size(127, 23);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Revert to sale reg form";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -162,7 +160,6 @@
             this.button4.TabIndex = 44;
             this.button4.Text = "Erase";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -287,6 +284,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

@@ -86,11 +86,8 @@ namespace erpcrm
             e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Form6().Show();
-            this.Hide();
-        }
+
+
     }
 
    

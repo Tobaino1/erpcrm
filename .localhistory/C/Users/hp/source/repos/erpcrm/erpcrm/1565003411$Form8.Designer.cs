@@ -67,12 +67,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Revert to sales form";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+       
             // 
             // label1
             // 

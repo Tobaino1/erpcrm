@@ -50,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -67,11 +66,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 111);
+            this.button1.Location = new System.Drawing.Point(658, 111);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Revert to sales form";
+            this.button1.Size = new System.Drawing.Size(127, 23);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Revert to sale reg form";
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -287,6 +287,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
