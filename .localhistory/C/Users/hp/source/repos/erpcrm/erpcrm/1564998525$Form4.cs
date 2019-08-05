@@ -133,26 +133,6 @@ namespace erpcrm
             MessageBox.Show("record has been successfully updated");
             con.Close();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
-            this.Hide();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            new Form4().Show();
-            this.Hide();
-        }
     }
     }
 

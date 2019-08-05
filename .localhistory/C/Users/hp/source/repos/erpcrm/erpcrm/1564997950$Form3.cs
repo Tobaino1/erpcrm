@@ -34,11 +34,5 @@ namespace erpcrm
             new Form6().Show();
             this.Hide();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            new Form7().Show();
-            this.Hide();
-        }
     }
 }

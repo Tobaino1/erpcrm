@@ -96,63 +96,6 @@ namespace erpcrm
             MessageBox.Show("record has been successfully deleted");
             con.Close();
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please enter a value!");
-                return;
-
-            }
-
-            if (textBox2.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please enter a value!");
-            }
-
-            if (textBox3.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please enter a value!");
-                return;
-
-            }
-
-            if (textBox4.Text == string.Empty)
-            {
-                MessageBox.Show("field can't be empty, please enter a value!");
-                return;
-
-            }
-
-
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand("UPDATE `customer` SET `cus_name`= '" + textBox2.Text + "',`phone_no`= '" + textBox2.Text + "',`address`= '" + textBox3.Text + "',`email`= '" + textBox4.Text + "' WHERE phone_no = '" + textBox2.Text + "'", con);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("record has been successfully updated");
-            con.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
-            this.Hide();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            new Form4().Show();
-            this.Hide();
-        }
     }
     }
-
+}

@@ -19,25 +19,7 @@ namespace erpcrm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Form5().Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            new Form6().Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            new Form7().Show();
+            new Form2.()Show();
             this.Hide();
         }
     }

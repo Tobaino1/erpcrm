@@ -84,7 +84,6 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Reports";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -95,7 +94,6 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "Sales Operation";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
