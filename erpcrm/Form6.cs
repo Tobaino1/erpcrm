@@ -66,7 +66,7 @@ namespace erpcrm
         {
             if (textBox1.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("product name field can't be empty, please enter a value!");
                 return;
 
             }
@@ -74,20 +74,20 @@ namespace erpcrm
 
             if (textBox2.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("description of product field can't be empty, please enter a value!");
                 return;
 
             }
 
             if (textBox3.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("unit price field can't be empty, please enter a value!");
                 return;
 
             }
             if (textBox4.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("quantity field can't be empty, please enter a value!");
                 return;
 
             }
@@ -100,7 +100,7 @@ namespace erpcrm
             }
             if (textBox6.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a   value!");
+                MessageBox.Show("product id field can't be empty, please enter a   value!");
                 return;
 
             }
@@ -111,29 +111,29 @@ namespace erpcrm
                 return;
 
             }
-            if (textBox32.Text == string.Empty)
+            if (textBox35.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("month field can't be empty, please enter a numeric value! eg 1 for january, 6 for june.");
                 return;
 
             }
 
             if (textBox33.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("sales rep field can't be empty, please enter a value!");
                 return;
 
             }
             if (textBox34.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("name of customer field can't be empty, please enter a value!");
                 return;
 
             }
 
             if (textBox35.Text == string.Empty)
             {
-                MessageBox.Show("field can't be empty, please enter a value!");
+                MessageBox.Show("field for month can't be empty, please enter a value!");
                 return;
 
             }
@@ -195,6 +195,101 @@ namespace erpcrm
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+       
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //to generate random number
+        //Random rand = new Random();
+        //string s = null;
+        //    for (int i = 0; i <= 100; i++)
+        //        s += rand.Next(0, 1001).ToString() + ",";
+        //    MessageBox.Show(s);
+
+        //Random RandomClass = new Random();
+        //int num1;
+        //num1 = RandomClass.Next(1, 49);
+        //textBox36.Text = num1.ToString();
+
+        //long ticks = DateTime.Now.Ticks;
+        //byte[] bytes = BitConverter.GetBytes(ticks);
+        //string id = Convert.ToBase64String(bytes)
+        //                        .Replace('+', '_')
+        //                        .Replace('/', '-')
+        //                        .TrimEnd('=');
+        //textBox36.Text = id.ToString();
+
+        //DateTime.Now.ToString("yyMMddHHmmssff");
+        //textBox36.Text = DateTime.Now.ToLongTimeString();
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void textBox35_TextChanged(object sender, EventArgs e)
+        {
+            //if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[^1-12]"))
+            //{
+            //    //MessageBox.Show("Please enter only number from 1-12, siginifying the current month, Eg 1 for january, 6 for june.");
+            //    //textBox35.Text = textBox35.Text.Remove(textBox35.Text.Length - 1);
+
+            //}
+
+            string actualdata = string.Empty;
+            char[] entereddata = textBox35.Text.ToCharArray();
+            foreach (char aChar in entereddata.AsEnumerable())
+            {
+                if (Char.IsDigit(aChar))
+                {
+                    actualdata = actualdata + aChar;
+                    // MessageBox.Show(aChar.ToString());
+                }
+                else
+                {
+                    MessageBox.Show(aChar + " is not numeric, enter a number from 1 to 12");
+                    actualdata.Replace(aChar, ' ');
+                    actualdata.Trim();
+                }
+            }
+            textBox35.Text = actualdata;
+
+        }
+
+        private void textBox32_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            long ticks = DateTime.Now.Ticks;
+            byte[] bytes = BitConverter.GetBytes(ticks);
+            string id = Convert.ToBase64String(bytes)
+                                    .Replace('+', '_')
+                                    .Replace('/', '-')
+                                    .TrimEnd('=');
+            textBox32.Text = id.ToString();
+
+            DateTime.Now.ToString("yyMMddHHmmssff");
+            textBox32.Text = DateTime.Now.ToShortTimeString();
         }
     }
 }

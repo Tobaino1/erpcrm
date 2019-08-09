@@ -40,11 +40,12 @@ namespace erpcrm
                 dataGridView1.Rows[n].Cells[1].Value = item["desc"].ToString();
                 dataGridView1.Rows[n].Cells[2].Value = item["unit_price"].ToString();
                 dataGridView1.Rows[n].Cells[3].Value = item["prd_id"].ToString();
-                dataGridView1.Rows[n].Cells[4].Value = item["grand_total"].ToString();
-                dataGridView1.Rows[n].Cells[5].Value = item["invoice_no"].ToString();
-                dataGridView1.Rows[n].Cells[6].Value = item["name_cus"].ToString();
-                dataGridView1.Rows[n].Cells[7].Value = item["sales_rep"].ToString();
-                dataGridView1.Rows[n].Cells[8].Value = item["submit"].ToString();
+                dataGridView1.Rows[n].Cells[4].Value = item["qty"].ToString();
+                dataGridView1.Rows[n].Cells[5].Value = item["grand_total"].ToString();
+                dataGridView1.Rows[n].Cells[6].Value = item["invoice_no"].ToString();
+                dataGridView1.Rows[n].Cells[7].Value = item["name_cus"].ToString();
+                dataGridView1.Rows[n].Cells[8].Value = item["sales_rep"].ToString();
+                dataGridView1.Rows[n].Cells[9].Value = item["submit"].ToString();
 
             }
             MessageBox.Show("click on print button");
@@ -87,6 +88,12 @@ namespace erpcrm
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            new Form6().Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             new Form6().Show();
             this.Hide();

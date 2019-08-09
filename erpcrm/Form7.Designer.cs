@@ -96,7 +96,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(521, 57);
+            this.label5.Location = new System.Drawing.Point(438, 63);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(201, 18);
             this.label5.TabIndex = 52;
@@ -114,17 +114,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(394, 438);
+            this.label1.Location = new System.Drawing.Point(277, 439);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 13);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 50;
-            this.label1.Text = "Eg january (all in the small letters)";
+            this.label1.Text = "Eg 1 for january ";
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(211, 436);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
+            this.textBox1.Size = new System.Drawing.Size(44, 20);
             this.textBox1.TabIndex = 49;
             // 
             // button3

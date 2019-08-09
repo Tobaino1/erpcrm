@@ -1,0 +1,240 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using System.Windows.Forms;
+
+namespace erpcrm
+{
+    public partial class Form6 : Form
+    {
+        public Form6()
+        {
+            InitializeComponent();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //total cal
+            int a, b, c, d, ee, f, g, h, i, j, k, l, m, n, o;
+            if (Int32.TryParse(textBox3.Text, out a) && Int32.TryParse(textBox4.Text, out b))
+                textBox5.Text = (a * b).ToString();
+
+            if (Int32.TryParse(textBox15.Text, out c) && Int32.TryParse(textBox19.Text, out d))
+                textBox23.Text = (c * d).ToString();
+
+            if (Int32.TryParse(textBox16.Text, out ee) && Int32.TryParse(textBox20.Text, out f))
+                textBox24.Text = (ee * f).ToString();
+
+            if (Int32.TryParse(textBox17.Text, out g) && Int32.TryParse(textBox21.Text, out h))
+                textBox25.Text = (g * h).ToString();
+
+            if (Int32.TryParse(textBox18.Text, out i) && Int32.TryParse(textBox22.Text, out j))
+                textBox26.Text = (i * j).ToString();
+
+
+            //grand total cal
+            if (Int32.TryParse(textBox5.Text, out k) && Int32.TryParse(textBox23.Text, out l) && (Int32.TryParse(textBox24.Text, out m) && Int32.TryParse(textBox25.Text, out n) && Int32.TryParse(textBox26.Text, out o)))
+                textBox31.Text = (k + l + m + n + o).ToString();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new Form8().Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+
+            if (textBox2.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+            if (textBox3.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+            if (textBox4.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+            if (textBox5.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+            if (textBox6.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a   value!");
+                return;
+
+            }
+
+            if (textBox31.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+            if (textBox32.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+            if (textBox33.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+            if (textBox34.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+            if (textBox35.Text == string.Empty)
+            {
+                MessageBox.Show("field can't be empty, please enter a value!");
+                return;
+
+            }
+
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO salesreg(`name_prd`, `desc`, `unit_price`, `qty`, `total`,`prd_id`,`name_cus`, `sales_rep`, `grand_total`, `invoice_no`, `month`) VALUES('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "', '" + textBox4.Text + "','" + textBox5.Text + "', '" + textBox6.Text + "','" + textBox34.Text + "', '" + textBox33.Text + "','" + textBox31.Text + "', '" + textBox32.Text + "', '" + textBox35.Text + "')", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("record has been succesfully inserted in the database, Click Ok to proceed in prinitng receipt");
+            Form8 myform = new Form8();
+            this.Hide();
+            myform.Show();
+            con.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox15.Clear();
+            textBox16.Clear();
+            textBox17.Clear();
+            textBox18.Clear();
+            textBox19.Clear();
+            textBox20.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox23.Clear();
+            textBox24.Clear();
+            textBox25.Clear();
+            textBox26.Clear();
+            textBox27.Clear();
+            textBox28.Clear();
+            textBox29.Clear();
+            textBox30.Clear();
+            textBox31.Clear();
+            textBox32.Clear();
+            textBox33.Clear();
+            textBox34.Clear();
+            textBox35.Clear();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            string s = null;
+            for (int i = 0; i <= 100; i++)
+                s += rand.Next(0, 1001).ToString() + ",";
+            MessageBox.Show(s);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //Random RandomClass = new Random();
+            //int num1;
+            //num1 = RandomClass.Next(1, 49);
+            //textBox36.Text = num1.ToString();
+
+            //long ticks = DateTime.Now.Ticks;
+            //byte[] bytes = BitConverter.GetBytes(ticks);
+            //string id = Convert.ToBase64String(bytes)
+            //                        .Replace('+', '_')
+            //                        .Replace('/', '-')
+            //                        .TrimEnd('='); 
+            //textBox36.Text = id.ToString();
+
+
+            int onlyThisAmount = 20;
+            string ticks = DateTime.Now.Ticks.ToString();
+            ticks = ticks.Substring(ticks.Length - onlyThisAmount);
+        }
+    }
+}

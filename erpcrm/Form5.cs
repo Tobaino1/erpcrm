@@ -15,6 +15,8 @@ namespace erpcrm
     {
         public Form5()
         {
+            InitializeComponent();
+
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=erp_crm");
             con.Open();
             MySqlDataAdapter sda = new MySqlDataAdapter("select * from inventory ", con);
@@ -27,11 +29,7 @@ namespace erpcrm
                 dataGridView1.Rows[n].Cells[1].Value = item["desc"].ToString();
                 dataGridView1.Rows[n].Cells[2].Value = item["price"].ToString();
                 dataGridView1.Rows[n].Cells[3].Value = item["prd_id"].ToString();
-
-
             }
-
-            InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -159,6 +157,15 @@ namespace erpcrm
         {
             Application.Exit();
         }
-    }
-    }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+    }
